@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domínio da Linguagem Corporal - Baixe Agora</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 40px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #222;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #00509e;
+            font-size: 1.8em;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .cta-button {
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            margin-top: 30px;
+            text-align: center;
+            display: inline-block;
+        }
+
+        .cta-button:hover {
+            background-color: #004999;
+        }
+
+        .highlight {
+            color: #d4af37;
+            font-weight: bold;
+        }
+
+        .testimonial {
+            background-color: #f1f1f1;
+            border-left: 5px solid #0066cc;
+            padding: 15px;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .iframe-wrapper {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        iframe {
+            width: 80%;
+            height: 800px;
+            border: none;
+            border-radius: 10px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .urgency {
+            font-size: 1.5em;
+            color: #e63946;
+            font-weight: bold;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .countdown {
+            font-size: 1.5em;
+            color: #d4af37;
+            text-align: center;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Parabéns! Você Está Prestes a Descobrir a Magia da Linguagem Corporal</h1>
+
+        <h2>Por Que Este eBook é Para Você?</h2>
+        <p>Imagine ser capaz de <span class="highlight">entender os sinais não-verbais</span> das pessoas ao seu redor e usá-los a seu favor. O eBook "<strong>A Magia da Linguagem Corporal</strong>" te mostrará como dominar essa arte. Com base em <span class="highlight">estudos científicos</span> e técnicas usadas por especialistas em comunicação, você aprenderá a interpretar e influenciar através de gestos, postura e expressões faciais.</p>
+
+        <h2>O Que Você Vai Aprender:</h2>
+        <ul>
+            <li>Como identificar emoções ocultas através de microexpressões.</li>
+            <li>A linguagem corporal ideal para <span class="highlight">liderança e persuasão</span>.</li>
+            <li>Métodos de influência não-verbal em negociações e entrevistas.</li>
+        </ul>
+
+        <div class="testimonial">
+            <p>"Este livro me ajudou a melhorar significativamente minha comunicação com meus clientes. Hoje, consigo interpretar sinais não-verbais que antes passavam despercebidos." — <strong>Lucas, Empreendedor</strong></p>
+        </div>
+
+        <h2>Aproveite Agora!</h2>
+        <p><strong>Apenas por tempo limitado,</strong> você pode baixar o eBook gratuitamente. Não perca essa oportunidade única de <span class="highlight">revolucionar suas interações sociais</span> e se tornar um mestre da comunicação não-verbal!</p>
+
+        <div class="urgency">A oferta termina em:</div>
+        <div id="countdown" class="countdown"></div>
+
+        <div class="iframe-wrapper">
+            <iframe src="https://chk.eduzz.com/2009043?a=68333907"></iframe>
+        </div>
+
+    </div>
+
+    <script>
+        // Função para atualizar o cronômetro
+        function startCountdown(duration, display) {
+            let timer = duration, hours, minutes, seconds;
+            setInterval(function () {
+                hours = Math.floor(timer / 3600);
+                minutes = Math.floor((timer % 3600) / 60);
+                seconds = Math.floor(timer % 60);
+
+                // Adiciona zero na frente de números menores que 10
+                hours = hours < 10 ? "0" + hours : hours;
+                minutes = minutes < 10 ? "0" + minutes : minutes;
+                seconds = seconds < 10 ? "0" + seconds : seconds;
+
+                display.textContent = hours + ":" + minutes + ":" + seconds;
+
+                if (--timer < 0) {
+                    timer = 0;
+                    display.textContent = "Tempo esgotado!";
+                }
+            }, 1000);
+        }
+
+        // Tempo inicial: 5 horas (em segundos)
+        window.onload = function () {
+            const fiveHours = 5 * 60 * 60, // 5 horas em segundos
+                  display = document.querySelector('#countdown'); // Elemento onde o cronômetro será exibido
+            startCountdown(fiveHours, display); // Inicia o cronômetro
+        };
+    </script>
+
+</body>
+</html>
